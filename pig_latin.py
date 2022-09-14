@@ -16,5 +16,6 @@ class PigLatin():
         else:
             return  f"{self.word[1:]}{self.word[0]}ay"
 
-word1 = PigLatin("cat")
-print(word1.word_to_pl())
+if __name__ == "__main__":
+    word1 = PigLatin("cat")
+    print(word1.word_to_pl())
