@@ -1,5 +1,5 @@
 # script para covertir una frase en ingles a pig latin.
-# utilizando el ejercicio anterior:
+# utilizando el ejercicio anterior:git
 
 from pig_latin import PigLatin
 my_sentence = "my cat is called pepito"
