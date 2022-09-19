@@ -5,6 +5,7 @@
 class Ubbi_dubbi():
     def __init__(self, word: str):
         self.word = word
+        self.cat = "misin"
     
     def world_to_ubbidubbi(self):
         vowels = "aeiou"
@@ -20,6 +21,7 @@ class Ubbi_dubbi():
 if __name__ == "__main__":
     my_word = Ubbi_dubbi("phone")
     print(my_word.world_to_ubbidubbi())
+    print(getattr(my_word,"cat"))
 
 
 
