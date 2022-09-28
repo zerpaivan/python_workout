@@ -18,9 +18,17 @@ class Ubbi_dubbi():
         
         return ud_word
 
+# solucion por Regex
+import re
+def ubbiDubbi(input_word):
+    ubbiRegex = re.compile(r'([aeiouAEIOU])')
+    ubbidubbi_word = ubbiRegex.sub(r'ub\1', input_word)
+    return ubbidubbi_word
+
 if __name__ == "__main__":
     my_word = Ubbi_dubbi("phone")
     print(my_word.world_to_ubbidubbi())
+    print("Regex: ", ubbiDubbi("Duck cat dog"))
     print(getattr(my_word,"cat"))
 
 
